@@ -30,6 +30,10 @@ function addNewLiOnClick() {
   let click = document.querySelector('input[type=submit]');
   // listen for click so use .addEventListener(listen_to_this, function(event)
   // .addEventListener(click, function(event)
-  click.addEventListener('click', function(event){addNewElementAsLi()});
+  // error, must erase input, use .querySelector
+  click.addEventListener('click', function(event){
+    addNewElementAsLi();
+    
+  });
 }
 
