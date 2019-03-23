@@ -33,7 +33,7 @@ function addNewLiOnClick() {
   // error, must erase input, use .querySelector
   click.addEventListener('click', function(event){
     addNewElementAsLi();
-    
+    document.querySelector('input').value = "";
   });
 }
 
