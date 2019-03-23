@@ -40,11 +40,9 @@ function addNewLiOnClick() {
 function clearEmployeeListOnLinkClick() {
   let click = document.querySelector('.clear employee list');
   let clearThis = click.querySelector('ul');
-  
+  click.addEventListener("click", function(event) {
+    clearThis = "";
+  });
   
 }
 
-let ul = document.querySelector('ul')
-  link.addEventListener('click', function(event){
-    ul.innerHTML = ''
-  })
