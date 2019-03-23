@@ -40,10 +40,10 @@ function addNewLiOnClick() {
 function clearEmployeeListOnLinkClick() {
   let click = document.querySelector('a');
   let clearThis = document.querySelector('ul');
-  // 
+  // https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript
   // document.getElementById(elementID).innerHTML = "";
   click.addEventListener("click", function(event) {
-    clearThis = "";
+    clearThis.innerHTML = "";
   });
   
 }
