@@ -40,6 +40,8 @@ function addNewLiOnClick() {
 function clearEmployeeListOnLinkClick() {
   let click = document.querySelector('a');
   let clearThis = document.querySelector('ul');
+  // 
+  // document.getElementById(elementID).innerHTML = "";
   click.addEventListener("click", function(event) {
     clearThis = "";
   });
